@@ -1,0 +1,101 @@
+*{
+    margin:0;
+    padding:0;
+}
+.bg-image {
+	background: url('../../images/Bg.png') no-repeat center center fixed;
+    border: 2px solid black;
+	opacity: 0.5;
+	height: 1000px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.img{
+    background-color:#04d0f0;
+    cursor: pointer;
+}
+
+.options img{
+    float: left;
+    width: 20%;
+    margin:1%;
+    padding: 1.5%;
+    border-radius: 10px;
+    /* height: 300px; */
+}
+.options{
+    margin-top: 200px;
+}
+.content{
+    width: 90%;
+    margin: auto;
+}
+.greeting{
+    padding-top: 150px;
+    width: 450px;
+    margin: auto;
+    font-size: 25px;
+    text-align: center;
+}
+.name{
+    margin-top: 50px;
+}
+
+.welcome {
+    position: relative;
+    animation-name: welcome;
+    animation-duration: 4s;
+    background-color: blue;
+    border-radius:10px;
+    padding:5px;
+  }
+  .name{
+    position: relative;
+    animation-name: header;
+    animation-duration: 4s;
+    background-color: blueviolet;
+    border-radius:10px;
+    padding:5px;
+}
+  
+@keyframes welcome {
+    100%   {background-color:red; left:0px; top:0px;}
+    0%  {background-color:yellow; left:200px; top:0px;}
+}
+  @keyframes header {
+    100%  {background-color:green; left:0px; top:0px;}
+    0% {background-color:red; left:200px; top:0px;}
+}
+@media only screen and (max-width: 480px) {
+    
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .options img{
+        width: 45%;
+        height: 250px;
+    }
+}
+@media only screen and (max-width: 680px) {
+    .options img{
+        height: 220px;
+    }
+    .greeting{
+        width: 400px;
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .options img{
+        height: 150px;
+    }
+    .greeting{
+        width: 300px;
+        font-size: 18px;
+    }
+}
+
