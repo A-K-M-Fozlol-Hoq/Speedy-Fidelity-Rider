@@ -33,8 +33,8 @@ function App() {
           <Route path="/login">
             <Login></Login>
           </Route>
-          <PrivateRoute>
-            <Destination exact path='/destination/:carId'></Destination>
+          <PrivateRoute path='/destination/:carId'>
+            <Destination ></Destination>
           </PrivateRoute>
           <Route path="*">
             <NotFound></NotFound>
